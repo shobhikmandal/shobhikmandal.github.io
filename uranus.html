@@ -1,107 +1,405 @@
-<html>
-    <body>
-        <head>  
-          <link rel="stylesheet" href="IndexStyle.css">
-          <div class="root">
-    
-    
-    <div class="navbar">
-      <a href="index.html"
-      >Home page</a>
+<!doctype html>
+<html lang="en">
+  <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <a href="mercury.html"
-      >Mercury</a>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"/>
 
-      <a href="venus.html"
-      >Venus</a>
-    
-      <a href="earth.html"
-      >Earth</a>
-      
-      <a href="mars.html"
-      >Mars</a>
-    
-      <a href="jupiter.html"
-      >Jupiter</a>
-    
-      <a href="saturn.html"
-      >Satrun</a>
-    
-      <span>
-        Uranus
-      </span>
+    <title>Uranus</title>
+  </head>
+  <body>
 
-      <a href="neptune.html"
-      >   Neptune  </a>
-    
-    </div>
-    
-    <div class="main">
+    <div class="container" style="background-color: #A5C9F1;">
 
-            <body style="background-color: black;text-align: center;"></body>
-            <div style="text-decoration:underline royalblue ;font-size: 45px;color:cadetblue;">
-            <h1>
-                Uranus
-            </h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Solar System</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Planets
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                  <li><a class="dropdown-item" href="mercury.html">Mercury</a></li>
+                  <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                  <li><a class="dropdown-item" href="earth.html">Earth</a></li>
+                  <li><a class="dropdown-item" href="mars.html">Mars</a></li>
+                  <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
+                  <li><a class="dropdown-item" href="saturn.html">Satrun</a></li>
+                  <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
+                  <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+
+            </ul>
+            <script>
+              function gsearch(){
+                var url = 'https://www.google.com/search?q=' 
+                          + document.getElementById('gsearch_q').value
+                          + ' -site: https://shobhikmandal.github.io/';
+                window.open(url);
+              }
+            </script>
+            <form class="d-flex" target="_blank">
+              <input  id="gsearch_q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="button" onclick="gsearch()">Search</button>
+            </form>
+          </div>
         </div>
-        <br><br><br>
-        <img src="Images/Uranus2.jfif"width="650px"border="15px" >
-        
-        <link rel="stylesheet" href="Index Style.css">
-            
-            </head>
-            <body>
-            
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-            <script src="Script2.js"></script>
+      </nav>
 
-            <div style="color:darkgoldenrod;margin-left: 40px;font-size:30px;text-decoration:underline cornflowerblue;" >
-              <h1>
-                Facts 
-              </h1>
+      <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+        <div class="col-6">
+          <img src="images/uranustitle.jpeg" width="100%" height="90%" border="15px" >
+        </div>
+        <div class="col-6">
+          <h2>Uranus</h2>
+          <h4 style="margin-top: 30px; margin-bottom: 30px;"><i>
+            Uranus is the seventh planet from the Sun. Its name 
+            is a reference to the Greek god of the sky, Uranus, 
+            who, according to Greek mythology, was the great-grandfather 
+            of Ares, grandfather of Zeus and father of 
+            Cronus. It has the third-largest planetary radius 
+            and fourth-largest planetary mass in the Solar System. Uranus 
+            is similar in composition to Neptune, and both have bulk chemical 
+            compositions which differ from that of the larger gas giants Jupiter 
+            and Saturn.
+          </h4>
+
+          <h4 style="margin-top: 30px; margin-bottom: 30px;"><i>
+            Uranus's atmosphere is similar to Jupiter's and Saturn's 
+            in its primary composition of hydrogen and helium, 
+            but it contains more water, ammonia, 
+            and methane, along with traces of other hydrocarbons.
+            It has the coldest planetary atmosphere in the Solar 
+            System, with a minimum temperature of 49 K (−224 °C), 
+            and has a complex, layered cloud structure with water thought 
+            to make up the lowest clouds and methane the uppermost layer 
+            of clouds.
+          </i></h4>
+
+
+        </div>
+      </div>
+
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Uranus has two sets of very thin dark coloured rings.
+            </button>
+          </h2>
+
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row" style="margin-top: 50px;">
+                  <div class="col" style="text-align: center;">
+                    <img src="images/uranus3.jpeg" border="10px" width="75%">
+                  </div>
+
+                  <div class="col">
+                    <p style="padding: 10%; text-align: justify;">
+                      The ring particles are small, ranging from a 
+                      dust-sized particles to small boulders. 
+                      There are eleven inner rings and two 
+                      outer rings. They probably formed 
+                      when one or more of Uranus’s moons 
+                      were broken up in an impact. The 
+                      first rings were discovered in 
+                      1977 with the two outer rings 
+                      being discovered in Hubble 
+                      Space Telescope images 
+                      between 2003 and 2005.
+                    </p>
+                  </div>
+                </div>
             </div>
+          </div>
+        </div>
 
-<div style="color:violet;font-size: 29px;"> 
-    • Uranus is tipped over on its side with an axial tilt of 98 degrees.<br>
-     Uranus became the first planet discovered with the use of a telescope. <br><br><br>
-   </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Uranus hits the coldest temperatures of any planet.                         </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/uranuscold.jpeg" border="10px" width="75%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    With minimum atmospheric temperature of -224°C 
+                    Uranus is nearly coldest planet in the solar 
+                    system. While Neptune doesn’t get as cold as 
+                    Uranus it is on average colder. The upper 
+                    atmosphere of Uranus is covered by a methane 
+                    haze which hides the storms that take place 
+                    in the cloud decks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Uranus is often referred to as an “ice giant” planet.              </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/ICEGAINTURANUS.jpeg" border="10px" width="75%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    Like the other gas giants, it has a hydrogen 
+                    upper layer, which has helium mixed in. Below 
+                    that is an icy “mantle, which surrounds a rock 
+                    and ice core. The upper atmosphere is made of 
+                    water, ammonia and the methane ice crystals 
+                    that give the planet its pale blue colour.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Uranus makes one trip around the Sun every 84 Earth years.
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/uranusspinn.gif" border="10px" width="75%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    During some parts of its orbit one or the other
+                    of its poles point directly at the Sun and get 
+                    about 42 years of direct sunlight. The rest of 
+                    the time they are in darkness.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Uranus was officially discovered by Sir William Herschel in 1781.
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/SirWilliamHerschel.jpg" border="10px" width="60%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    It is too dim to have been seen by the ancients. 
+                    At first Herschel thought it was a comet, but 
+                    several years later it was confirmed as a planet. 
+                    Herscal tried to have his discovery named “Georgian 
+                    Sidus” after King George III. The name Uranus was 
+                    suggested by astronomer Johann Bode. The name comes 
+                    from the ancient Greek deity Ouranos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
   
-   <div style="color:purple;font-size: 29px;">
-   • Uranus is the seventh planet from the Sun.<br>
-   Uranus rotates on its axis once every 17 hours and 14 minutes. <br><br><br>
-   </div> 
-  
-   <div style="color:dodgerblue;font-size: 29px;">
-    •  It takes Uranus 84 Earth days to orbit the Sun.<br>
-     William Herschel discovered Uranus in 1781. <br><br><br>
-   </div>
-  
-   <div style="color:cyan;font-size: 29px;">
-    • A collision may have caused the unusual tilt of Uranus.<br>
-     Uranus wind speeds can reach up to 900 km per hour. <br><br><br>
-   </div>
-  
-   <div style="color:green;font-size: 29px;">
-    • Uranus is the second-least dense planet.<br>
-    The atmosphere of Uranus contains “ices” <br><Br><br>
-   </div>
-  
-   <div style="color:yellow;font-size: 29px;">
-    • Uranus is the coldest planet in the Solar System.<br> 
-     Uranus orbits the Sun on its side <br><br><br>
-   </div>
-  
-   <div style="color:orange;font-size: 29px;">
-    • The interior of Uranus is mainly composed of ices and rock.<br>
-    Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the great-grandfather of Ares (Mars), grandfather of Zeus (Jupiter) and father of Cronus (Saturn). <br><br><br>
-   </div>
-  
-   <div style="color:red;font-size: 29px;">
-   • Temperatures inside it may reach 8,540 F (4,727 C),<br>
-    which sounds warm but is cooler than other planets <br><br><br>
-  </div>
-</div>
-      
-      </head>
-    </body>
+		          
+       <!-- utube -->
+       <div class="container"  style="margin-top: 50px;">
+        
+        <div class="row">
+          <div class="col">
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe src="https://www.youtube.com/embed/m4NXbFOiOGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">About Uranus</h5>
+                <p class="card-text">This video tells about Uranus</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col">
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe src="https://www.youtube.com/embed/BN5m2wwOhi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Facts on Uranus</h5>
+                <p class="card-text">This video tells facts on Uranus</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col">
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe src="https://www.youtube.com/embed/AsPuLyRBDQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Facts on Uranus's major moons.</h5>
+                <p class="card-text">This video shows facts on Uranus’s major moons.</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col">
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe src="https://www.youtube.com/embed/kOEDG3j1bjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">The Black Hole</h5>
+                <p class="card-text">This video tells about the Black Hole.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>  <!--End utube-->     
+
+      <div class="footer" style="text-align: center;background-color: burlywood; margin-top: 20px; padding-top: 20px;">
+
+        <div class="row" >
+          <strong>Thanks for visiting!</strong>
+        </div>
+
+        <div class="row" style="margin-top: 20px;">
+          <strong>Created by Shobhik Mandal</strong>
+        </div>
+
+        <div class="row" style="margin: 20px;">
+          <div class="col">
+            <a href="https://www.w3schools.com/Css/" target="_blank"><strong>CSS</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.javascript.com/" target="_blank"><strong>Java Script</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.w3schools.com/html/" target="_blank"><strong>w3school</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank"><strong>Bootstrap website</strong></a>
+          </div>
+
+          <div class="col" style="margin-bottom: 60px;">
+            <a href="https://www.geeksforgeeks.org/html-tutorials" target="_blank"><strong>GeeksforGeeks</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.python.org/" target="_blank"><strong>Python</strong></a>
+          </div>
+
+        </div>
+      </div>
+
+    </div> <!-- first div -->
+
+
+    <button type="button" class="btn btn-danger position-fixed bottom-0 end-0 btn-lg" id="btn-back-to-top">
+      Top <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script>
+        
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      scrollFunction();
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+
+  </body>
 </html>

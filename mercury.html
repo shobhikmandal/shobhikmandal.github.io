@@ -1,88 +1,388 @@
-<html>
-    <body>
-        <head>
-          <link rel="stylesheet" href="IndexStyle.css">
-          <div class="root">
-            
-                <div class="navbar">
-                  <a href="index.html">Home page</a>
-                  <span>
-                      Mercury
-                  </span>
-                  <a href="venus.html">Venus</a>
-                  <a href="earth.html">Earth</a>
-                  <a href="mars.html">Mars</a>
-                  <a href="jupiter.html">Jupiter</a>
-                  <a href="saturn.html">Satrun</a>
-                  <a href="uranus.html">Saturn</a>
-                  <a href="neptune.html">Neptune</a>
-                </div>
-                
-                <div class="main">
-            
-            <body style="background-color: black;text-align: center;"></body>
-            <div style="text-decoration:underline coral;font-size: 45px;color:dodgerblue;">
-            <h1>
-                Mercury
-            </h1>
+<!doctype html>
+<html lang="en">
+  <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <title>Mercury</title>
+  </head>
+  <body>
+
+    <div class="container" style="background-color: #A5C9F1;">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Solar System</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Planets
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                  <li><a class="dropdown-item" href="mercury.html">Mercury</a></li>
+                  <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                  <li><a class="dropdown-item" href="earth.html">Earth</a></li>
+                  <li><a class="dropdown-item" href="mars.html">Mars</a></li>
+                  <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
+                  <li><a class="dropdown-item" href="saturn.html">Satrun</a></li>
+                  <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
+                  <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+
+            </ul>
+            <script>
+              function gsearch(){
+                var url = 'https://www.google.com/search?q=' 
+                          + document.getElementById('gsearch_q').value
+                          + ' -site: https://shobhikmandal.github.io/';
+                window.open(url);
+              }
+            </script>
+            <form class="d-flex" target="_blank">
+              <input  id="gsearch_q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="button" onclick="gsearch()">Search</button>
+            </form>
+          </div>
         </div>
-        <br><br><br>
-        <img src="Images/Mercury3.jfif"width="650px"border="15px" >
-            </head>
-            <body>
+      </nav>
+
+      <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+        <div class="col-6">
+          <img src="images/Mercury4.jpeg" width="100%" border="15px" >
+        </div>
+        <div class="col-6">
+          <h2>Mercury</h2>
+          <h4 style="margin-top: 30px; margin-bottom: 30px;"><i>
+            Mercury is the smallest planet in the Solar System and the closest to the Sun. 
+            Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. 
+            It is named after the Roman god Mercurius (Mercury), god of commerce, messenger of the gods, 
+            and mediator between gods and mortals, corresponding to the Greek god Hermes (Ἑρμῆς).
+          </h4>
+
+          <h4 style="margin-top: 30px; margin-bottom: 30px;"><i>
+            Mercury orbits the Sun within Earth's orbit as an inferior planet, 
+            and its apparent distance from the Sun as viewed from Earth never exceeds 28°. 
+          </i></h4>
+
+
+        </div>
+      </div>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Distance of Mercury from Earth
+            </button>
+          </h2>
+
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row" style="margin-top: 50px;">
+                  <div class="col" style="text-align: center;">
+                    <img src="images/mercuryearth.png" border="10px" width="75%">
+                  </div>
+
+                  <div class="col">
+                    <p style="padding: 10%; text-align: justify;">
+                      Mercury is the second densest planet after Earth, with a 
+                      huge metallic core roughly 2,200 to 2,400 miles (3,600 to 3,800 kilometers) 
+                      wide, or about 75% of the planet's diameter. In comparison, Mercury's outer shell 
+                      is only 300 to 400 miles (500 to 600 km) thick.
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Mercury can be seen from Earth
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/mercury5.png" border="10px" width="75%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    Every seven years or so, Mercury can be seen from Earth 
+                    passing across the face of the Sun. This happens because 
+                    Mercury’s orbit is inclined by 7 degrees to the plane of Earth’s 
+                    orbit and its known as a transit. The next transit of Mercury is on 
+                    September 14, 2021.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              A year on Mercury is just 88 days long.              
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/mercury6.jpg" border="10px" width="60%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    One solar day (the time from noon-to-noon on the planet’s surface) 
+                    on Mercury lasts the equivalent of 176 Earth days while the side
+                    real day (the time for 1 rotation in relation to a fixed point) 
+                    lasts 59 Earth days. Mercury is nearly tidally locked to the Sun
+                    and over time this has slowed the rotation of the planet to almost
+                    match its orbit around the Sun. Mercury also has the highest orbital
+                    eccentricity of all the planets with its distance from the Sun ranging
+                    from 46 to 70 million km.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Mercury has wrinkles              
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/mercurycloseup.jpg" border="10px" width="75%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    As the iron core of the planet cooled and contracted, the surface of the planet became wrinkled. Scientist have named these wrinkles, 
+                    Lobate Scarps. These Scarps can be up to a mile high and hundreds of miles long.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Mercury has a molten core.
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/mercury7.jpg" border="10px" width="75%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    In recent years scientists from NASA have come to believe 
+                    the solid iron core of Mercury could in fact be molten. 
+                    Normally the core of smaller planets cools rapidly, but after 
+                    extensive research, the results were not in line with those 
+                    expected from a solid core. Scientists now believe the core to 
+                    contain a lighter element such as sulphur, which would lower the 
+                    melting temperature of the core material. It is estimated Mercury’s 
+                    core makes up 42% of its volume, while the Earth’s core makes up 17%.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+  
+		          
+       <!-- utube -->
+       <div class="container"  style="margin-top: 50px;">
+        <div class="row">
+          <div class="col">
             
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="983" height="553" src="https://www.youtube.com/embed/0KBjnNuhRHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>width="983" height="553" src="https://www.youtube.com/embed/MtRzy2TJAOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">About Mercury</h5>
+                <p class="card-text">This video shows all about Mercury.</p>
+              </div>
+            </div>
             
-            <script src="Script2.js"></script>
+          </div>
+          <div class="col">
 
-            <div style="color:darkgoldenrod;margin-left: 40px;font-size:30px;text-decoration:underline cornflowerblue;" >
-              <h1>
-                Facts 
-              </h1>
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="983" height="553" src="https://www.youtube.com/embed/rX_NCCpw5Uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Facts on Mercury</h5>
+                <p class="card-text">This video shows little known facts of Mercury.</p>
+              </div>
             </div>
-            <div style="color:violet;font-size: 29px;"> 
-             • Mercury is the closest planet to the Sun
-              and is also the smallest of the eight planets<br>
-              in our solar system. <br><br><br>
+          </div>
+            
+          
+
+          </div>
+        <div class="row">
+          <div class="col">
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="983" height="553" src="https://www.youtube.com/embed/6HJ9MXNk7IY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Images of Mercury </h5>
+                <p class="card-text">This video shows the real images of Mercury</p>
+              </div>
             </div>
-
-            <div style="color:purple;font-size: 29px;">
-            • For every 2 orbits of 
-            the Sun, which takes around 88 Earth days, Mercury <br>
-            completes three rotations of its axis. It is gravitationally 
-            locked and this rotation is unique to the solar system.<br><br><br>
-            </div> 
-
-            <div style="color:dodgerblue;font-size: 29px;">
-              • Mercury does not have any moons or rings.<br>
-              The ancient Romans named it Mercury in honor of the swift messenger of their Gods.<br><br><br>
-            </div>
-
-            <div style="color:cyan;font-size: 29px;">
-              • Because of Mercury's size and nearness to the brightly shining sun,<br>
-               the planet is often hard to see from Earth without a telescope.<br><br><br>
-            </div>
-
-            <div style="color:green;font-size: 29px;">
-              • Our weight on Mercury would be 38% of our weight on Earth.<br>
-              A day on the surface of Mercury lasts 176 Earth days.<br><Br><br>
-            </div>
-
-            <div style="color:yellow;font-size: 29px;">
-              • Mercury has a diameter of 4,879 km.<br>
-              Only half part of Mercury has been explored<br><br><br>
-            </div>
-
-            <div style="color:orange;font-size: 29px;">
-              • It has a diameter of 3,031 miles, about two-fifths the Earth's diameter.<br><br><br>
-            </div>
-
-            <div style="color:red;font-size: 29px;">
-            • It is gravitationally locked and this rotation is unique to the solar system.<br>
-            The temperature during the day can reach 840 degrees Fahrenheit (450 degrees Celsius),
-            but at night, temperatures can get as low as minus 275 F (minus 170 C)<br><br><br>
           </div>
 
-        </head>
-    </body>
+          
+
+          <div class="col">
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="983" height="553" src="https://www.youtube.com/embed/TXfOzhZGtNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              <div class="card-body">
+                <h5 class="card-title">Size comparison</h5>
+                <p class="card-text">This video shows the size comparison of the universe (Including Nebulas,Stars,black holes,Galaxies ect).</p>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+      </div>       
+
+      <div class="footer" style="text-align: center;background-color: burlywood; margin-top: 20px; padding-top: 20px;">
+
+        <div class="row" >
+          <strong>Thanks for visiting!</strong>
+        </div>
+
+        <div class="row" style="margin-top: 20px;">
+          <strong>Created by Shobhik Mandal</strong>
+        </div>
+
+        <div class="row" style="margin: 20px;">
+          <div class="col">
+            <a href="https://www.w3schools.com/Css/" target="_blank"><strong>CSS</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.javascript.com/" target="_blank"><strong>Java Script</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.w3schools.com/html/" target="_blank"><strong>w3school</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank"><strong>Bootstrap website</strong></a>
+          </div>
+
+          <div class="col" style="margin-bottom: 60px;">
+            <a href="https://www.geeksforgeeks.org/html-tutorials" target="_blank"><strong>GeeksforGeeks</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.python.org/" target="_blank"><strong>Python</strong></a>
+          </div>
+
+        </div>
+      </div>
+      
+    </div> <!-- first div -->
+
+
+    <button type="button" class="btn btn-danger position-fixed bottom-0 end-0 btn-lg" id="btn-back-to-top">
+      Top <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script>
+        
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      scrollFunction();
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+
+  </body>
 </html>

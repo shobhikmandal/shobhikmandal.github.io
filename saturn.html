@@ -1,106 +1,387 @@
-<html>
-    <body>
-        <head>  
-          <link rel="stylesheet" href="IndexStyle.css">
-          <div class="root">
+<!doctype html>
+<html lang="en">
+  <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
-    
-    <div class="navbar">
-      <a href="index.html"
-      >Home page</a>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"/>
 
-      <a href="mercury.html"
-      >Mercury</a>
-    
-      <a href="venus.html"
-      >Venus</a>
-    
-      <a href="earth.html"
-      >Earth</a>
-      
-      <a href="mars.html"
-      >Mars</a>
-    
-      <a href="jupiter.html"
-      >Jupiter</a>
-    
-      <span>
-        Saturn
-      </span>
+    <title>Satrun</title>
+  </head>
+  <body>
 
-      <a href="uranus.html"
-      >Uranus</a>
-    
-      <a href="neptune.html"
-      >Neptune</a>
-    
-    </div>
-    
-    <div class="main">
+    <div class="container" style="background-color: #A5C9F1;">
 
-            <body style="background-color: black;text-align: center;"></body>
-            <div style="text-decoration:underline chocolate ;font-size: 45px;color:powderblue;">
-            <h1>
-                Saturn
-            </h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Solar System</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Planets
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                  <li><a class="dropdown-item" href="mercury.html">Mercury</a></li>
+                  <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                  <li><a class="dropdown-item" href="earth.html">Earth</a></li>
+                  <li><a class="dropdown-item" href="mars.html">Mars</a></li>
+                  <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
+                  <li><a class="dropdown-item" href="saturn.html">Satrun</a></li>
+                  <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
+                  <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+
+            </ul>
+            <script>
+              function gsearch(){
+                var url = 'https://www.google.com/search?q=' 
+                          + document.getElementById('gsearch_q').value
+                          + ' -site: https://shobhikmandal.github.io/';
+                window.open(url);
+              }
+            </script>
+            <form class="d-flex" target="_blank">
+              <input  id="gsearch_q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="button" onclick="gsearch()">Search</button>
+            </form>
+          </div>
         </div>
-        <br><br><br>
-        <img src="Images/Saturn2.jfif"width="650px"border="15px" >        
-        <link rel="stylesheet" href="Index Style.css">
-            
-            </head>
-            <body>
-            
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-            
-            <script src="Script2.js"></script>
+      </nav>
 
-<div style="color:darkgoldenrod;margin-left: 40px;font-size:30px;text-decoration:underline cornflowerblue;" >
-  <h1>
-    Facts 
-  </h1>
-</div>
-<div style="color:violet;font-size: 29px;"> 
-    • Saturn is the sixth planet from the Sun and last of the planets known to ancient civilizations.<br>
-     Saturn is one of five planets able to be seen with the unaided eye. <br><br><br>
-   </div>
+      <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+        <div class="col-6">
+          <img src="images/satruntitle.jpg" width="100%" height="90%" border="15px" >
+        </div>
+        <div class="col-6">
+          <h2>Saturn</h2>
+          <h4 style="margin-top: 30px; margin-bottom: 30px;"><i>
+            Saturn is the sixth planet from the Sun and the second-largest 
+            in the Solar System, after Jupiter. It is a gas giant with an 
+            average radius of about nine and a half times that of Earth.
+            It only has one-eighth the average density of Earth; however, 
+            with its larger volume, Saturn is over 95 times more massive.
+            Saturn is named after the Roman god of wealth and agriculture; 
+            its astronomical symbol (♄) represents the god's sickle. The 
+            Romans named the seventh day of the week Saturday, Sāturni diēs 
+            ("Saturn's Day") no later than the 2nd century for the planet Saturn.</i>
+          </h4>
+
+          <h4 style="margin-top: 30px; margin-bottom: 30px;"><i>
+            Saturn's interior is most likely composed of a core
+            of iron–nickel and rock (silicon and oxygen compounds). 
+            Its core is surrounded by a deep layer of metallic hydrogen, 
+            an intermediate layer of liquid hydrogen and liquid helium, 
+            and finally a gaseous outer layer. Saturn has a pale yellow 
+            hue due to ammonia crystals in its upper atmosphere. 
+          </i></h4>
+
+
+        </div>
+      </div>
+
+
+      <div class="accordion" id="accordionExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Saturn is the flattest planet.              </button>
+          </h2>
+
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row" style="margin-top: 50px;">
+                  <div class="col" style="text-align: center;">
+                    <img src="images/saturnflat.jpg" border="10px" width="60%" height="60%">
+                  </div>
+
+                  <div class="col">
+                    <p style="padding: 10%; text-align: justify;">
+                      Its polar diameter is 90% of its equatorial diameter, 
+                      this is due to its low density and fast rotation. 
+                      Saturn turns on its axis once every 10 hours and 34 
+                      minutes giving it the second-shortest day of any of 
+                      the solar system’s planets.
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Saturn orbits the Sun once every 29.4 Earth years.              </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/saturnrotate.gif" border="10px" width="75%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    Its slow movement against the backdrop of stars 
+                    earned it the nickname of “Lubadsagush” from the 
+                    ancient Assyrians. The name means “oldest of the old”.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Saturn has oval-shaped storms similar to Jupiter’s.                               
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/satrunstorm.jpg" border="10px" width="75%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    The region around its north pole has a 
+                    hexagonal-shaped pattern of clouds. Scientists 
+                    think this may be a wave pattern in the upper 
+                    clouds. The planet also has a vortex over its 
+                    south pole that resembles a hurricane-like storm.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Titan is a moon with complex and dense nitrogen-rich atmosphere.
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/satrun'stitanmoon.jpg" border="10px" width="75%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    It is composed mostly of water ice and rock.
+                    Its frozen surface has lakes of liquid methane
+                    and landscapes covered with frozen nitrogen. 
+                    Planetary scientists consider Titan to be a 
+                    possible harbour for life, but not Earth-like 
+                    life.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Four spacecraft have visited Saturn.
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/saturnspacecraft.jpg" border="10px" width="100%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    Pioneer 11, Voyager 1 and 2, and the 
+                    Cassini-Huygens mission have all studied
+                    the planet. Cassini orbited Saturn from
+                    July 2004 until September 2017, sending 
+                    back a wealth of data about the planet,
+                    its moons, and rings.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
   
-   <div style="color:purple;font-size: 29px;">
-   • In Roman mythology Saturn was the father of Jupiter, king of the gods.<br>
-    Saturn was known to the ancients, including the Babylonians and Far Eastern observers. <br><br><br>
-   </div> 
-  
-   <div style="color:dodgerblue;font-size: 29px;">
-    • Saturn’s upper atmosphere is divided into bands of clouds.<br>
-     Saturn orbits the Sun once every 29.4 Earth years. <br><br><br>
-   </div>
-  
-   <div style="color:cyan;font-size: 29px;">
-    • Saturn is the flattest planet.<br>
-     Saturn has oval-shaped storms similar to Jupiter’s <br><br><br>
-   </div>
-  
-   <div style="color:green;font-size: 29px;">
-    • Saturn is flattened at the poles, due to a fast rotation on its axis.<br>
-    Saturn was the god of agriculture in Roman mythology. <br><Br><br>
-   </div>
-  
-   <div style="color:yellow;font-size: 29px;">
-    • Saturn is a gas-giant planet and therefore does not have a solid surface like Earth’s. But it might have a solid core somewhere in there.<br>
-    Saturn's atmosphere is made up mostly of hydrogen (H2) and helium (He). <br><br><br>
-   </div>
-  
-   <div style="color:orange;font-size: 29px;">
-    • Saturn orbits at a distance of about 886 million miles (1.4 billion kilometers) from the Sun.<br>
-    Nine Earths side by side would almost span Saturn’s diameter. <br><br><br>
-   </div>
-  
-   <div style="color:red;font-size: 29px;">
-   • Saturn cannot support life as we know it, but some of Saturn's moons have conditions that might support life.<br>
-   Saturn is also regarded as it has 53 known moons with an additional 29 moons awaiting confirmation of their discovery.So there is a total of 82 moons on Saturn. <br><br><br>
-  </div>
-      
-      </head>
-    </body>
+		          
+       <!-- utube -->
+      <div class="container"  style="margin-top: 50px;">
+        <div class="row">
+          <div class="col">
+            
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="866" height="487" src="https://www.youtube.com/embed/bzY7aaaFzJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Facts on Saturn</h5>
+                <p class="card-text">This video shows facts on Saturn.</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col">
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="866" height="487" src="https://www.youtube.com/embed/imGm92qGH0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Images of Saturn’s moons</h5>
+                <p class="card-text">This Documentery shows the moons of Satrun.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="983" height="553" src="https://www.youtube.com/embed/mdekB1fkHiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              </div>
+              <div class="card-body">
+                <h5 class="card-title">Images of Satrun</h5>
+                <p class="card-text">This video shows the real images of Satrun</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="866" height="487" src="https://www.youtube.com/embed/epZdZaEQhS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              </div>
+              <div class="card-body">
+                <h5 class="card-title">About Satrun</h5>
+                <p class="card-text">This video shows all about Satrun.</p>
+              </div>
+            </div>
+          </div>
+            
+        </div>  
+      </div>       
+
+      <div class="footer" style="text-align: center;background-color: burlywood; margin-top: 20px; padding-top: 20px;">
+
+        <div class="row" >
+          <strong>Thanks for visiting!</strong>
+        </div>
+
+        <div class="row" style="margin-top: 20px;">
+          <strong>Created by Shobhik Mandal</strong>
+        </div>
+
+        <div class="row" style="margin: 20px;">
+          <div class="col">
+            <a href="https://www.w3schools.com/Css/" target="_blank"><strong>CSS</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.javascript.com/" target="_blank"><strong>Java Script</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.w3schools.com/html/" target="_blank"><strong>w3school</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank"><strong>Bootstrap website</strong></a>
+          </div>
+
+          <div class="col" style="margin-bottom: 60px;">
+            <a href="https://www.geeksforgeeks.org/html-tutorials" target="_blank"><strong>GeeksforGeeks</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.python.org/" target="_blank"><strong>Python</strong></a>
+          </div>
+
+        </div>
+      </div>
+
+    </div> <!-- first div -->
+
+
+    <button type="button" class="btn btn-danger position-fixed bottom-0 end-0 btn-lg" id="btn-back-to-top">
+      Top <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script>
+        
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      scrollFunction();
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+
+  </body>
 </html>

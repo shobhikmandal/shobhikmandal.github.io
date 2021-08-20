@@ -1,104 +1,358 @@
-<html>
-    <body>
-        <head>
-          <link rel="stylesheet" href="IndexStyle.css">
-          <div class="root">    
-                
-                <div class="navbar">
-                  
-      <a href="index.html"
-      >Home page</a>
-  
-      <a href="mercury.html"
-      >Mercury</a>
-        
-      <a href="venus.html"
-      >Venus</a>
-      
-      <a href="earth.html"
-      >Earth</a>
-    
-      <a href="mars.html"
-      >Mars</a>
-    
-      <span>
-        Jupiter
-      </span>
-    
-      <a href="saturn.html"
-      >Satrun</a>
-    
-      <a href="uranus.html"
-      >Saturn</a>
-  
-      <a href="neptune.html"
-      >Neptune</a>
-    
-    </div>
-                
-                <div class="main">
-            
-            <body style="background-color: black;text-align: center;"></body>
-            <div style="text-decoration:underline skyblue;font-size: 45px;color:firebrick;">
-            <h1>
-                Jupiter
-            </h1>
+<!doctype html>
+<html lang="en">
+  <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <title>Jupiter</title>
+  </head>
+  <body>
+
+    <div class="container" style="background-color: #A5C9F1;">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Solar System</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Planets
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                  <li><a class="dropdown-item" href="mercury.html">Mercury</a></li>
+                  <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                  <li><a class="dropdown-item" href="earth.html">Earth</a></li>
+                  <li><a class="dropdown-item" href="mars.html">Mars</a></li>
+                  <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
+                  <li><a class="dropdown-item" href="saturn.html">Satrun</a></li>
+                  <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
+                  <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+
+            </ul>
+            <script>
+              function gsearch(){
+                var url = 'https://www.google.com/search?q=' 
+                          + document.getElementById('gsearch_q').value
+                          + ' -site: https://shobhikmandal.github.io/';
+                window.open(url);
+              }
+            </script>
+            <form class="d-flex" target="_blank">
+              <input  id="gsearch_q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="button" onclick="gsearch()">Search</button>
+            </form>
+          </div>
         </div>
-        <br><br><br>
-        <img src="Images/Jupiter2.jfif"width="650px"border="15px" >
-            
-            </head>
-            <body>
-            
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-            
-            <script src="Script2.js"></script>
+      </nav>
 
-            <div style="color:darkgoldenrod;margin-left: 40px;font-size:30px;text-decoration:underline cornflowerblue;" >
-              <h1>
-                Facts 
-              </h1>
+      <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+        <div class="col-6">
+          <img src="images/jupiter.jpg" width="100%" height="90%" border="15px" >
+        </div>
+        <div class="col-6">
+          <h2>Jupiter</h2>
+          <h4 style="margin-top: 30px; margin-bottom: 30px;"><i>
+            Jupiter is the fifth planet from the Sun and the largest
+            in the Solar System. It is a gas giant with a mass more 
+            than two and a half times that of all the other planets in 
+            the Solar System combined, but slightly less than one-thousandth 
+            the mass of the Sun. Jupiter is the third-brightest natural object 
+            in the Earth's night sky after the Moon and Venus. It has been observed 
+            since pre-historic times and is named after the Roman god Jupiter, the 
+            king of the gods, because of its observed size.
+          </h4>
+
+          <h4 style="margin-top: 30px; margin-bottom: 30px;"><i>
+            Jupiter is primarily composed of hydrogen, but 
+            helium comprises one quarter of its mass and 
+            one tenth of its volume. It likely has a rocky 
+            core of heavier elements,[17] but like the other 
+            giant planets, Jupiter lacks a well-defined solid 
+            urface. The on-going contraction of its interior 
+            generates heat greater than the amount received 
+            from the Sun. 
+          </i></h4>
+
+
+        </div>
+      </div>
+
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              The Great Red Spot is a huge storm on Jupiter.
+            </button>
+          </h2>
+
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row" style="margin-top: 50px;">
+                  <div class="col" style="text-align: center;">
+                    <img src="images/jupispot.jpeg" border="10px" width="75%">
+                  </div>
+
+                  <div class="col">
+                    <p style="padding: 10%; text-align: justify;">
+                      The storm has raged for at least 350 years.
+                      It is so large that three Earths could fit inside it.
+                    </p>
+                  </div>
+                </div>
             </div>
-            <div style="color:violet;font-size: 29px;"> 
-                • The planet Jupiter is the fifth planet out from the Sun.<br>
-                 It is two and a half times more massive than all the other planets in the solar system combined. <br><br><br>
-               </div>
-              
-               <div style="color:purple;font-size: 29px;">
-               • It is made primarily of gases and is therefore known as a “gas giant”.<br>
-               When Galileo discovered the four moons of Jupiter in 1610 this was the first proof of celestial bodies orbiting something other than Earth. <br><br><br>
-               </div> 
-              
-               <div style="color:dodgerblue;font-size: 29px;">
-                • The first recorded sighting of Jupiter were by the ancient Babylonians in around 7th or 8th BC.<br>
-                 Jupiter has the shortest day of the eight planets. <br><br><br>
-               </div>
-              
-               <div style="color:cyan;font-size: 29px;">
-                 • Jupiter is 778,340,821 km or 483,638,564 miles away from Sun,<br>
-                  which is 5 times more from the Earth is from the Sun. <br><br><br>
-               </div>
-              
-               <div style="color:green;font-size: 29px;">
-                 • Jupiter is named after the king of the Roman gods. To the Greeks, it represented Zeus, the god of thunder.<br>
-                    The Mesopotamians saw Jupiter as the god Marduk and patron of the city of Babylon.   <br><Br><br>
-               </div>
-              
-               <div style="color:yellow;font-size: 29px;">
-                 • It turns on its axis once every 9 hours and 55 minutes.<br>
-                  The rapid rotation flattens the planet slightly, giving it an oblate shape. <br><br><br>
-               </div>
-              
-               <div style="color:orange;font-size: 29px;">
-                 • Jupiter orbits the Sun once every 11.8 Earth years.<br>
-                 From our point of view on Earth, it appears to move slowly in the sky, taking months to move from one constellation to another. <br><br><br>
-               </div>
-              
-               <div style="color:red;font-size: 29px;">
-               • The Great Red Spot is a huge storm on Jupiter.<br>
-               It has raged for at least 350 years. It is so large that three Earths could fit inside it. <br><br><br>
-              </div>
+          </div>
+        </div>
 
-        </head>
-    </body>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              The ancient Babylonians were the first to record their sightings of Jupiter.
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/jupi.jpeg" border="10px" width="75%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    This was around the 7th or 8th century BC. 
+                    Jupiter is named after the king of the Roman gods. 
+                    To the Greeks, it represented Zeus, the god of thunder. 
+                    The Mesopotamians saw Jupiter as the god Marduk and patron 
+                    of the city of Babylon. Germanic tribes saw this planet as Donar, or Thor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Jupiter has the shortest day of all the planets.                  </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/jupi.gif" border="10px" width="60%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    It turns on its axis once every 9 hours and 55 minutes.
+                    The rapid rotation flattens the planet slightly, giving 
+                    it an oblate shape.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Jupiter’s interior is made of rock, metal, and hydrogen compounds.              </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/jupiinterior.jpg" border="10px" width="75%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    Below Jupiter’s massive atmosphere (which is made
+                    primarily of hydrogen), there are layers of 
+                    compressed hydrogen gas, liquid metallic hydrogen,
+                    and a core of ice, rock, and metals.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Jupiter has a thin ring system.
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+              <div class="row" style="margin-top: 50px;">
+                <div class="col" style="text-align: center;">
+                  <img src="images/jupiring.jpg" border="10px" width="75%">
+                </div>
+
+                <div class="col">
+                  <p style="padding: 10%; text-align: justify;">
+                    Its rings are composed mainly of dust particles 
+                    ejected from some of Jupiter’s smaller worlds 
+                    during impacts from incoming comets and asteroids. 
+                    The ring system begins some 92,000 kilometres above 
+                    Jupiter’s cloud tops and stretches out to more than 
+                    225,000 km from the planet. They are between 2,000 
+                    to 12,500 kilometres thick.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+  
+       <!-- utube -->
+      <div class="container"  style="margin-top: 50px;">
+        <div class="row">
+          <div class="col">
+            
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="947" height="533" src="https://www.youtube.com/embed/PtkqwslbLY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              </div>
+              <div class="card-body">
+                <h5 class="card-title">About Jupiter</h5>
+                <p class="card-text">This video shows all about Jupiter.</p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="col">
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="866" height="487" src="https://www.youtube.com/embed/BZnDB5VJiT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Facts on Jupiter</h5>
+                <p class="card-text">This video shows facts on Jupiter.</p>
+              </div>
+            </div>
+            
+          </div> 
+      </div>       
+
+
+      <div class="footer" style="text-align: center;background-color: burlywood; margin-top: 20px; padding-top: 20px;">
+
+        <div class="row" >
+          <strong>Thanks for visiting!</strong>
+        </div>
+
+        <div class="row" style="margin-top: 20px;">
+          <strong>Created by Shobhik Mandal</strong>
+        </div>
+
+        <div class="row" style="margin: 20px;">
+          <div class="col">
+            <a href="https://www.w3schools.com/Css/" target="_blank"><strong>CSS</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.javascript.com/" target="_blank"><strong>Java Script</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.w3schools.com/html/" target="_blank"><strong>w3school</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank"><strong>Bootstrap website</strong></a>
+          </div>
+
+          <div class="col" style="margin-bottom: 60px;">
+            <a href="https://www.geeksforgeeks.org/html-tutorials" target="_blank"><strong>GeeksforGeeks</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.python.org/" target="_blank"><strong>Python</strong></a>
+          </div>
+
+        </div>
+      </div>
+
+    </div> <!-- first div -->
+
+
+    <button type="button" class="btn btn-danger position-fixed bottom-0 end-0 btn-lg" id="btn-back-to-top">
+      Top <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script>
+        
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      scrollFunction();
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+
+  </body>
 </html>

@@ -44,15 +44,24 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">About</a>
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
               </li>
 
             </ul>
 
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+            <script>
+              function gsearch(){
+                var url = 'https://www.google.com/search?q=' 
+                          + document.getElementById('gsearch_q').value
+                          + ' -site: https://shobhikmandal.github.io/';
+                window.open(url);
+              }
+            </script>
+            <form class="d-flex" target="_blank">
+              <input  id="gsearch_q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="button" onclick="gsearch()">Search</button>
             </form>
+
           </div>
         </div>
       </nav>
@@ -65,7 +74,48 @@
         <a class="btn btn-primary" style=" margin-top: 20px; " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
           Table of contents
         </a>
+      </div>
 
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top"><title="Go to top">Top
+        <i class="fas fa-arrow-up"></i>
+      </button>
+      
+      <div class="container mt-4 text-center" style="height: 1px;">
+        <style>
+            #btn-back-to-top {
+              position: fixed;
+              bottom: 20px;
+              right: 20px;
+              display: none;
+              }
+          </style>
+          <script>
+            
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 200 ||
+        document.documentElement.scrollTop > 200
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+          </script>
       </div>
 
 
@@ -73,33 +123,29 @@
         <div class="offcanvas-header">
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        
         <table align="center" bgcolor = white border="10px" >
           <th>
             Table of contents
           </th>
           <tr>    
               <td>
-                  <a href="#the-big-bang"> The Big Bang </a>
+                  <a href="#our-solar-system"> The Solar System: The planets division </a>
               </td>
           </tr>
           <tr>    
               <td>
-                  <a href="#after-the-big-bang"> After The Big Bang </a>
+                  <a href="#the-big-bang"> The Big Bang: The universe created </a>
               </td>
           </tr>
           <tr>    
             <td>
-                <a href="#how-did-the-universe-look,-after-the-Big-Bang?"> How did the universe look, after the Big Bang? </a>
+                <a href="#after-big-bang"> After the Big Bang </a>
             </td>
           </tr>
           <tr>    
             <td>
-                <a href="#the-planets-created"> The Planets: How they were created </a>
-            </td>
-          </tr>
-          <tr>    
-            <td>
-                <a href="#the-first-life-on-earth"> Earth created: The first life </a>
+                <a href="#yt-vids">Videos</a>
             </td>
           </tr>
         </table>
@@ -168,6 +214,8 @@
       </div> <!-- end slide -->
 
 
+      <a id="our-solar-system">
+
       <div class="row" style="margin-top: 50px;">
         <div class="col" style="text-align: center;">
           <img src = "images/solarsystem.png" width="75%"border="10px">
@@ -175,26 +223,26 @@
 
         <div class="col">
           <p style="padding: 10%; text-align: justify;">
-            Our solar system consists of eight planets that revolve around the Sun,
+            Our <strong>Solar System</strong> consists of eight planets that revolve around the Sun,
             which is central to our solar system. These planets have been classified 
-            into two categories that are "inner planets"
-            and "outer planets". Mercury, Venus, Earth and Mars are known as the "inner planets"
-            or "Terrestial planets". Jupiter, Saturn, Uranus and Neptune are know as the "outer planets"
-            or the "Gas giants".
+            into two categories that are <strong>"inner planets" </strong> 
+            and <strong>"outer planets"</strong>.  Mercury, Venus, Earth and Mars are known as the "inner planets"
+            or <strong>"Terrestial planets" </strong>. Jupiter, Saturn, Uranus and Neptune are know as the "outer planets"
+            or the <strong>"Gas giants".</strong>
           </p>
         </div>
       </div>
 
-
+      <a id="the-big-bang"></a>
       <div class="row"  style="margin-top: 50px;">
         <div class="col" style="text-align: center;">
           <p style="padding: 10%;text-align: justify;">
-            Around 13.8 billion years ago, all the matter in the Universe emerged from a single
+            Around 13.8 billion years ago, all the matter in the<strong> Universe </strong>emerged from a single
             , minute point in a violent burst. This expanded at an astonishingly
             high rate and temperature, doubling in size every 10-34 seconds, creating space as it
             rapidly inflated. Within a tiny fraction of a second gravity and all the other forces
-            were formed. Energy changed into particles of matter and 
-            antimatter, which largely destroyed each other.
+            were formed. Energy changed into particles of <strong>matter</strong> and 
+            <strong> antimatter</strong>, which largely destroyed each other.
           <p>
         </div>
 
@@ -204,6 +252,7 @@
       </div>
 
 
+      <a id="after-big-bang"></a>
       <div class="row"  style="margin-top: 50px;">
         <div class="col" style="text-align: center;">
             <img src="images/asteroid.jpg" alt=""border="10px"align="center"height=" 275px"width="450px">
@@ -212,10 +261,10 @@
         <div class="col">
           <p style="padding: 10%; text-align: justify;">
           After the Big Bang, the universe was like a hot soup of particles    
-          Over billions of years, gravity caused gas and dust to form galaxies,    
+          Over billions of years, <strong> gravity</strong> caused gas and dust to form <strong>galaxies, </strong>   
           stars , planets, and more. The matter that spread out from the Big Bang   
           developed into everything in the universe, including us.   
-          Astronomers have figured out that the universe    
+          <strong> Astronomers </strong> have figured out that the universe    
           is about 13 billion years old.   
           </p>
         </div>
@@ -223,10 +272,10 @@
       
 
        <!-- utube -->
+       <a id="yt-vids"></a>
        <div class="container"  style="margin-top: 50px;">
         <div class="row">
           <div class="col">
-            
 
             <div class="card w-100">
               <div class=" video-container">
@@ -243,7 +292,7 @@
 
             <div class="card w-100">
               <div class=" video-container">
-                <iframe width="1019" height="573" src="https://www.youtube.com/embed/kOEDG3j1bjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/kOEDG3j1bjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <div class="card-body">
                 <h5 class="card-title">The Black Hole</h5>
@@ -260,7 +309,7 @@
 
             <div class="card w-100">
               <div class=" video-container">
-                <iframe width="500" height="450" src="https://www.youtube.com/embed/2HoTK_Gqi2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/2HoTK_Gqi2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <div class="card-body">
                 <h5 class="card-title">The Sun</h5>
@@ -272,11 +321,11 @@
           <div class="col">
             <div class="card w-100">
               <div class=" video-container">
-                <iframe width="500" height="450" src="https://www.youtube.com/embed/libKVRa01L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/libKVRa01L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <div class="card-body">
                 <h5 class="card-title">More about our Solarsystem</h5>
-                <p class="card-text">This video tells about the Space.</p>
+                <p class="card-text">This video tells about the Solar System.</p>
               </div>
             </div>
           </div>
@@ -284,16 +333,48 @@
           </div>
         </div>  
 
+        <div class="footer" style="text-align: center;background-color: burlywood; margin-top: 20px; padding-top: 20px;">
+
+          <div class="row" >
+            <strong>Thanks for visiting!</strong>
+          </div>
+  
+          <div class="row" style="margin-top: 20px;">
+            <strong>Created by Shobhik Mandal</strong>
+          </div>
+  
+          <div class="row" style="margin: 20px;">
+            <div class="col">
+              <a href="https://www.w3schools.com/Css/" target="_blank"><strong>CSS</strong></a>
+            </div>
+  
+            <div class="col">
+              <a href="https://www.javascript.com/" target="_blank"><strong>Java Script</strong></a>
+            </div>
+  
+            <div class="col">
+              <a href="https://www.w3schools.com/html/" target="_blank"><strong>w3school</strong></a>
+            </div>
+  
+            <div class="col">
+              <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank"><strong>Bootstrap website</strong></a>
+            </div>
+  
+            <div class="col" style="margin-bottom: 60px;">
+              <a href="https://www.geeksforgeeks.org/html-tutorials" target="_blank"><strong>GeeksforGeeks</strong></a>
+            </div>
+  
+            <div class="col">
+              <a href="https://www.python.org/" target="_blank"><strong>Python</strong></a>
+            </div>
+  
+          </div>
+        </div>
+
     </div>
 
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
+
   </body>
 </html>

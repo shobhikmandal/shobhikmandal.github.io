@@ -1,104 +1,383 @@
-<html>
-    <body>
-        <head>  
-          <link rel="stylesheet" href="IndexStyle.css">
-          <div class="root">
-    
-    <div class="navbar">
-      <a href="index.html"
-      >Home page</a>
+<!doctype html>
+<html lang="en">
+  <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <a href="mercury.html"
-      >Mercury</a>
-    
-      <a href="venus.html"
-      >Venus</a>
-    
-      <a href="earth.html"
-      >Earth</a>
-      
-      <a href="mars.html"
-      >Mars</a>
-    
-      <a href="jupiter.html"
-      >Jupiter</a>
-    
-      <a href="saturn.html"
-      >Satrun</a>
-    
-      <a href="uranus.html"
-      >Uranus</a>
-      
-      <span>
-        Neptune
-      </span>
-    </div>
-    
-    <div class="main">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"/>
 
-            <body style="background-color: black;text-align: center;"></body>
-            <div style="text-decoration:underline royalblue ;font-size: 45px;color:darkgoldenrod;">
-            <h1>
-                Neptune
-            </h1>
+    <title>Neptune</title>
+  </head>
+  <body>
+
+    <div class="container" style="background-color: #A5C9F1;">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Solar System</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Planets
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                  <li><a class="dropdown-item" href="mercury.html">Mercury</a></li>
+                  <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+                  <li><a class="dropdown-item" href="earth.html">Earth</a></li>
+                  <li><a class="dropdown-item" href="mars.html">Mars</a></li>
+                  <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
+                  <li><a class="dropdown-item" href="saturn.html">Satrun</a></li>
+                  <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
+                  <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+
+            </ul>
+            <script>
+              function gsearch(){
+                var url = 'https://www.google.com/search?q=' 
+                          + document.getElementById('gsearch_q').value
+                          + ' -site: https://shobhikmandal.github.io/';
+                window.open(url);
+              }
+            </script>
+            <form class="d-flex" target="_blank">
+              <input  id="gsearch_q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="button" onclick="gsearch()">Search</button>
+            </form>
+          </div>
         </div>
-        <br><br><br>
-        <img src="Images/Neptune1.jfif"width="650px"border="15px" >
-        <div style="color:darkgoldenrod;margin-left: 40px;font-size:30px;text-decoration:underline cornflowerblue;" >
-          <h1>
-            Facts 
-          </h1>
+      </nav>
+
+      <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+        <div class="col-6">
+          <img src="images/Neptune.jfif" width="100%" height="90%" border="15px" >
         </div>
+        <div class="col-6">
+          <h2>Neptune</h2>
+          <h4 style="margin-top: 30px; margin-bottom: 30px;"><i>
+            Neptune is the eighth and farthest known Solar planet 
+            from the Sun. In the Solar System, it is the fourth-largest 
+            planet by diameter, the third-most-massive planet, and the 
+            densest giant planet. It is 17 times the mass of Earth, 
+            slightly more massive than its near-twin Uranus. Neptune is 
+            denser and physically smaller than Uranus because its greater 
+            mass causes more gravitational compression of its atmosphere. 
+            The planet orbits the Sun once every 164.8 years at an average 
+            distance of 30.1 AU (4.5 billion km; 2.8 billion mi). It is named 
+            after the Roman god of the sea and has the astronomical symbol ♆, 
+            a stylised version of the god Neptune's trident or the Greek letter psi.
+          </h4>
+
+          <h4 style="margin-top: 30px; margin-bottom: 30px;"><i>
+            Like Jupiter and Saturn, Neptune's atmosphere is 
+            composed primarily of hydrogen and helium, along 
+            with traces of hydrocarbons and possibly nitrogen, 
+            though it contains a higher proportion of "ices" 
+            such as water, ammonia and methane.          
+          </i></h4>
+        </div>
+      </div>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Only one spacecraft has flown by Neptune.
+              </button>
+            </h2>
+
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <div class="row" style="margin-top: 50px;">
+                    <div class="col" style="text-align: center;">
+                      <img src="images/voyager2 neputne.jfif" border="10px" width="75%">
+                    </div>
+
+                    <div class="col">
+                      <p style="padding: 10%; text-align: justify;">
+                        In 1989, the Voyager 2 spacecraft swept past 
+                        the planet. It returned the first close-up images 
+                        of the Neptune system. The NASA/ESA Hubble Space 
+                        Telescope has also studied this planet, as have a 
+                        number of ground-based telescopes.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
 
 
-        <link rel="stylesheet" href="Index Style.css">
-            </head>
-            <body>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Neptune has 14 moons.
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                
+                <div class="row" style="margin-top: 50px;">
+                  <div class="col" style="text-align: center;">
+                    <img src="images/Neptunemoons.jpg" border="10px" width="75%">
+                  </div>
+
+                  <div class="col">
+                    <p style="padding: 10%; text-align: justify;">
+                      The most interesting moon is Triton, a frozen world 
+                      that is spewing nitrogen ice and dust particles out 
+                      from below its surface. It was likely captured by the 
+                      gravitational pull of Neptune. It is probably the coldest 
+                      world in the solar system.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Neptune has a very active climate.
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+                <div class="row" style="margin-top: 50px;">
+                  <div class="col" style="text-align: center;">
+                    <img src="images/neputnestomr.jpg" border="10px" width="75%">
+                  </div>
+
+                  <div class="col">
+                    <p style="padding: 10%; text-align: justify;">
+                      Large storms whirl through its upper atmosphere, 
+                      and high-speed winds track around the planet at 
+                      up 600 meters per second. One of the largest storms 
+                      ever seen was recorded in 1989. It was called the 
+                      Great Dark Spot. It lasted about five years.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Neptune is the smallest of the ice giants.
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+                <div class="row" style="margin-top: 50px;">
+                  <div class="col" style="text-align: center;">
+                    <img src="images/neptune2.jpg" border="10px" width="75%">
+                  </div>
+
+                  <div class="col">
+                    <p style="padding: 10%; text-align: justify;">
+                      Despite being smaller than Uranus, Neptune 
+                      has a greater mass. Below its heavy atmosphere, 
+                      Uranus is made of layers of hydrogen, helium, 
+                      and methane gases. They enclose a layer of water, 
+                      ammonia and methane ice. The inner core of the planet 
+                      is made of rock.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Neptune spins on its axis very rapidly.
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+                <div class="row" style="margin-top: 50px;">
+                  <div class="col" style="text-align: center;">
+                    <img src="images/neputnespinnin.gif" border="10px" width="60%">
+                  </div>
+
+                  <div class="col">
+                    <p style="padding: 10%; text-align: justify;">
+                      Its equatorial clouds take 16 hours to make one rotation. This is because Neptune is not solid body.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+  
+		          
+       <!-- utube -->
+      <div class="container"  style="margin-top: 50px;">
+        <div class="row">
+          <div class="col">
             
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-             <script src="Script2.js"></script>
 
-<div style="color:violet;font-size: 29px;"> 
-    • It takes Neptune 164.8 Earth years to orbit the Sun.<br>
-     Neptune has the second largest gravity of any planet in the solar system <br><br><br>
-   </div>
-  
-   <div style="color:purple;font-size: 29px;">
-   • Neptune is named after the Roman God of the Sea.<br>
-    Neptune was discovered by Jean Joseph Le Verrier. <br><br><br>
-   </div> 
-  
-   <div style="color:dodgerblue;font-size: 29px;">
-    •  The orbit path of Neptune is approximately 30 astronomical units (AU) from the Sun.<br>
-    Neptune has a very active climate. <br><br><br>
-   </div>
-  
-   <div style="color:cyan;font-size: 29px;">
-    • Neptune is the smallest of the ice giants.<br>
-     The atmosphere of Neptune is made of hydrogen and helium, with some methane. <br><br><br>
-   </div>
-  
-   <div style="color:green;font-size: 29px;">
-    •Neptune was not known to the ancients.<br>
-     Neptune spins on its axis very rapidly. <br><Br><br>
-   </div>
-  
-   <div style="color:yellow;font-size: 29px;">
-    • Neptune has 14 moons.<br>
-     Neptune has a very thin collection of rings. <br><br><br>
-   </div>
-  
-   <div style="color:orange;font-size: 29px;">
-    • Neptune is the fourth largest planet in the Solar System.<br>
-    Neptune is the eighth and farthest known Solar planet from the Sun.
-     <br><br><br>
-   </div>
-  
-   <div style="color:red;font-size: 29px;">
-   • It is the fourth-largest planet by diameter.<br>
-    The third-most-massive planet, and the densest giant planet. <br><br><br>
-  </div>
-      
-      </head>
-    </body>
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="947" height="532" src="https://www.youtube.com/embed/qGy4uyHVUYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              </div>
+              <div class="card-body">
+                <h5 class="card-title">Neptune's moon "Triton"</h5>
+                <p class="card-text">This video shows About Neptune's moon "Triton".</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col">
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="947" height="533" src="https://www.youtube.com/embed/d63_KTcR4n4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Images of Neptune</h5>
+                <p class="card-text">This video shows the real images of Neptune</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="947" height="553" src="https://www.youtube.com/embed/qjpOsrRYJwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              </div>
+              <div class="card-body">
+                <h5 class="card-title">Facts on Neptune</h5>
+                <p class="card-text">This video shows facts on Neptune</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+
+            <div class="card w-100">
+              <div class=" video-container">
+                <iframe width="947" height="553" src="https://www.youtube.com/embed/NStn7zZKXfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              </div>        
+              <div class="card-body">
+                <h5 class="card-title">About Neptune</h5>
+                <p class="card-text">This video shows all about Neptune.</p>
+              </div>
+            </div>
+          </div>
+            
+        </div> 
+      </div>       
+
+      <div class="footer" style="text-align: center;background-color: burlywood; margin-top: 20px; padding-top: 20px;">
+
+        <div class="row" >
+          <strong>Thanks for visiting!</strong>
+        </div>
+
+        <div class="row" style="margin-top: 20px;">
+          <strong>Created by Shobhik Mandal</strong>
+        </div>
+
+        <div class="row" style="margin: 20px;">
+          <div class="col">
+            <a href="https://www.w3schools.com/Css/" target="_blank"><strong>CSS</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.javascript.com/" target="_blank"><strong>Java Script</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.w3schools.com/html/" target="_blank"><strong>w3school</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank"><strong>Bootstrap website</strong></a>
+          </div>
+
+          <div class="col" style="margin-bottom: 60px;">
+            <a href="https://www.geeksforgeeks.org/html-tutorials" target="_blank"><strong>GeeksforGeeks</strong></a>
+          </div>
+
+          <div class="col">
+            <a href="https://www.python.org/" target="_blank"><strong>Python</strong></a>
+          </div>
+
+        </div>
+      </div>
+
+    </div> <!-- first div -->
+
+
+    <button type="button" class="btn btn-danger position-fixed bottom-0 end-0 btn-lg" id="btn-back-to-top">
+      Top <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script>
+        
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      scrollFunction();
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+
+  </body>
 </html>
